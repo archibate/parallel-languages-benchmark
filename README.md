@@ -4,7 +4,11 @@
 
 ## 性能测试结果（越高越好）
 
+### Mandelbrot 测试案例
+
 ![Figure](Figure_1.png)
+
+### 其他测试案例追加中...
 
 ## 我的结论
 
@@ -96,7 +100,7 @@ tbb+simd: 100 次 0.203668 秒 490.996253 次每秒
 ```python
 from python import Python
 let subprocess = Python.import_module("subprocess")
-print(subprocess.check_output(['sh', '-c', 'g++ -std=c++17 -fopenmp -fopenmp-simd -march=native -O3 cpptest.cpp -o /tmp/mandel && /tmp/mandel']).decode())
+print(subprocess.check_output(['sh', '-c', 'g++ -std=c++17 -fopenmp -fopenmp-simd -march=native -O3 cpp_mandel.cpp -o /tmp/mandel && /tmp/mandel']).decode())
 ```
 
 ```bash
