@@ -1,0 +1,2 @@
+source /home/bate/.local/pipx/venvs/taichi/bin/activate
+alias cmr='python make_figure.py'
